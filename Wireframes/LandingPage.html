@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="CMPE280 Assignment">
+    <meta name="author" content="Vinayk Kalaskar">
+
+    <title>Med Data</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+  <div class="row heading">
+
+    <h2> <p align="center"> <label class="title" align="center"> MedData </label> </p> </h2>
+  </div>
+
+  <div class="row">
+    <div class="container">
+    
+        <div class="col-md-1">
+        </div>
+
+        <div class="col-md-10 block-2">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs tabs-heading" role="tablist">
+            <li role="presentation" class="active tab-titles"><a href="#medical" aria-controls="home" role="tab" data-toggle="tab">Medical Details</a></li>
+            <li role="presentation" class="tab-titles"><a href="#financials" aria-controls="profile" role="tab" data-toggle="tab">Financials</a></li>
+            <li role="presentation" class="tab-titles"><a href="#emergency" aria-controls="messages" role="tab" data-toggle="tab">Emergency Contacts</a></li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="medical">Data displayed based on tab selected <br/> Medical Data</div>
+            <div role="tabpanel" class="tab-pane" id="financials">Data displayed based on tab selected <br/> Financial Data</div>
+            <div role="tabpanel" class="tab-pane" id="emergency">Data displayed based on tab selected <br/> Emergency Contact Data</div>
+          </div>
+
+        </div>
+
+        <div class="col-md-1">
+        </div>
+
+    </div> <!-- /container -->
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $('#myTabs a').click(function (e) {
+      e.preventDefault()
+      $(this).tab('show')
+    })
+  </script>
+  </body>
+</html>
